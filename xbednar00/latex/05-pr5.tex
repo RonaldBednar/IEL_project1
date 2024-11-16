@@ -1,0 +1,51 @@
+\section{Příklad 5}
+% Jako parametr zadejte skupinu (A-H)
+\patyZadani{C}
+
+\subsection*{1. krok}
+Zostavíme rovnice vyplyvajúce z obvodu.
+1. $i=\frac{u_R}{R}$\\
+2. $u_R+u_C-U=0$ \\
+3. ${u_C}'=\frac{i}{C}$\\
+
+Vyjadríme pomocou nich diferenciálnu rovnicu.\\\\
+${u_C}'=\frac{U_R}{RC}$\\\\
+${u_C}'=\frac{U-u_c}{RC}\Longrightarrow{u_C}'+\frac{u_c}{RC}=\frac{U}{RC}$\\
+
+\subsection*{2. krok}
+Zostavíme charakteristickú rovnicu.\\\\
+$(\lambda={u_C}',1={u_C}')$\\\\
+$\lambda+\frac{1}{RC}=0 \Rightarrow \lambda=-\frac{1}{RC}$\\
+
+\subsection*{3. krok}
+Dosadíme $\lambda$ do očakávného riešenia a túto rovnicu zderivujeme.\\\\
+${u_C}(t)=K(t)*e^{\lambda t}=K(t)*e^{-{\frac{t}{RC}}}$\\\\
+${u_C}'(t)=K'(t)*e^{-\frac{t}{RC}}+K(t)*{(-\frac{1}{RC}})*e^{-\frac{t}{RC}}$\\
+
+\subsection*{4. krok}
+Dosadíme $u_C$ a ${u_C}'$ do diferenciálnej rovnice.\\\\
+$K'(t)*e^{-\frac{t}{RC}}=\frac{U}{RC}$\\\\
+$K'(t)=\frac{U}{RC}*e^{\frac{t}{RC}}$\\\\
+$K(t)=U*e^{\frac{t}{RC}}+k$\\\\
+$u_c(t)=(U+k*e^{-\frac{t}{RC}})$\\
+
+\subsection*{5. krok}
+Dosadíme $u_c(0) = u_cp$\\\\
+$u_cp = U + k* e^0 \Rightarrow k = u_cp-U \Rightarrow u_c(t)=U+(u_cp-U)*e^{-\frac{t}{RC}}$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
